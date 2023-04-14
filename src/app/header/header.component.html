@@ -1,0 +1,8 @@
+<div *ngIf="config" [ngSwitch]="config.type">
+  <ng-template [ngSwitchCase]="headerTypeEnum.ONE">
+    <app-header-one></app-header-one>
+  </ng-template>
+  <ng-template [ngSwitchCase]="headerTypeEnum.TWO">
+    <app-header-two></app-header-two>
+  </ng-template>
+</div>
