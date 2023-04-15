@@ -11,6 +11,7 @@ interface BaseHeader {
 export interface HeaderOneConfig extends BaseHeader {
   type: HeaderType.ONE;
   sayHello: () => void;
+  onClickSearchButton: (text: any) => void;
 }
 
 export interface HeaderTwoConfig extends BaseHeader {

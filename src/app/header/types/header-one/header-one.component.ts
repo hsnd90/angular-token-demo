@@ -13,4 +13,6 @@ import { Header, HeaderOneConfig } from '../../interface/header';
     },
   ],
 })
-export class HeaderOneComponent extends Header<HeaderOneConfig> {}
+export class HeaderOneComponent extends Header<HeaderOneConfig> {
+  searchText = '';
+}

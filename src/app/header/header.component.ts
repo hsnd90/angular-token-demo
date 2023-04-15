@@ -24,7 +24,7 @@ export class HeaderComponent implements AfterViewInit {
   headerTypeEnum = HeaderType;
 
   ngAfterViewInit(): void {
-    this.header.config = this.config;
+    if (this.config) this.header.config = this.config;
     this.cd.detectChanges();
   }
 }
